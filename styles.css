@@ -1,0 +1,80 @@
+
+  body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scrolling */
+  font-family: Eurostile;
+  background-color: rgb(179, 226, 225);
+  font-size: 36px;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Moves it behind other elements */
+}
+
+#canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+#navbar ul {
+  position: relative;
+  z-index: 10;
+  color: black; /* Ensure text is visible */
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navbar li {
+  margin: 0 20px;
+}
+
+#navbar a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+#navbar a:hover {
+  background-color: #111;
+}
+
+#navbar a.selected {
+  background-color: #cc7048; /* Highlight color when selected */
+  color: white; /* Change text color to white for selected */
+  font-size: 22px; /* Optional: Increase font size when selected */
+  padding: 14px 20px; /* Optional: Increase padding when selected */
+}
+
+#weather {
+  position: relative;
+  z-index: 10;
+  color: black; /* Ensure text is visible */
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  display: flex; /* Use Flexbox to align items horizontally */
+  gap: 25px; /* Create space between the child divs (F and C) */
+  margin-top: 50px;
+  font-size: 16px;
+}
