@@ -221,6 +221,7 @@ function applyWarpedEffect(logo, t) {
     warpedImg.loadPixels();
     logo.loadPixels();
     
+    
     for (let y = 0; y < warpedImg.height; y++) {
       for (let x = 0; x < warpedImg.width; x++) {
         let index = (x + y * warpedImg.width) * 4;
@@ -228,7 +229,7 @@ function applyWarpedEffect(logo, t) {
         // Map coordinates back to the original logo space (removing padding)
         let logoX = x - padding;
         let logoY = y - padding;
-        
+        //trying to adjust padding for logo alignment
         
         
         // Apply edge-aware distortion
