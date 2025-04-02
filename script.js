@@ -211,7 +211,7 @@ function draw() {
 //   // Display the warped image at the center of the canvas
 //   image(warpedImg, -logo.width / 2, -logo.height / 2);
 // }
-
+// this is canceled out
 
 function applyWarpedEffect(logo, t) {
     // Add padding equal to the maximum distortion amount
